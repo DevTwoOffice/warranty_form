@@ -1,0 +1,11 @@
+<script>
+  const slug = window.location.pathname.split("/").pop();
+  // Load different content based on slug
+  if (slug === "gadda") {
+    document.body.innerHTML += "<h1>Welcome to Gadda</h1>";
+  } else if (slug === "newish") {
+    document.body.innerHTML += "<h1>Welcome to Newish</h1>";
+  } else {
+    document.body.innerHTML += "<h1>Default Warranty Page</h1>";
+  }
+</script>
